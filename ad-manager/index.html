@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+body,html{padding:0; margin:0;} #ad{height:100%; width:auto;}
+</style> 
+</head>
+<body>
+
+<a href="none" id="link"><img src="none" id="ad"></a>
+
+
+
+<script>
+  
+ads = [
+  {"link":"https://example.com", "img":"https://example.com/example.png"}
+];
+
+
+
+show = ads[(Math.floor(Math.random() * ads.length))];
+
+link = document.getElementById("link");
+ad = document.getElementById("ad");
+
+link.setAttribute("href", show.link);
+ad.setAttribute("src", "https://corsproxy.io/?" + show.img);
+  
+</script>
+
+
+
+</body>
+</html>
