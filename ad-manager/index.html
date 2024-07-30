@@ -13,7 +13,7 @@ body,html{padding:0; margin:0;} #ad{height:100%; width:auto;}
 <script>
   
 ads = [
-  {"link":"https://example.com", "img":"https://dangocities.github.io/ad-manager/notfound.jpg"}
+  {"link":"https://example.com", "img":"/ad-manager/notfound.jpg"}
 ];
 
 
@@ -24,7 +24,7 @@ link = document.getElementById("link");
 ad = document.getElementById("ad");
 
 link.setAttribute("href", show.link);
-ad.setAttribute("src", "https://corsproxy.io/?" + show.img);
+ad.setAttribute("src", show.img);
   
 </script>
 
